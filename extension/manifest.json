@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "TabTidy",
+  "version": "1.0",
+  "description": "Collect and manage all your open tabs.",
+  "permissions": ["tabs", "storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "index.html",
+  "host_permissions": ["<all_urls>"]
+
+}
